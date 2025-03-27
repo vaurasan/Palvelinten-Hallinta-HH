@@ -49,7 +49,7 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 > - Asennetaan salt-minion, salt-master, sekä muut Salt-komponentit
 > - STS:ää ei suositella tuotantokäyttöön, Salt Project suosittelee LTS-julkaisuja tuotantoympäristöihin
 
-## Otsikko
+## a) Asenna Debian 12-Bookworm virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.)
 
 
 
