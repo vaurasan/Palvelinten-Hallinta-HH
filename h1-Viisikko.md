@@ -65,10 +65,17 @@ Loin vielä uuden Debianilla varustetun virtuaalikoeen ja tein perus alkuasetuks
 ## b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi)
 Tässä tulee kyseeseen X-kohdassa mainittu sivu https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html
 
-*27.3.2025 klo 9:54*
+*27.3.2025 klo 9:57*
 
+- Varmistan, että "keyrings" kansio löytyy komennolla **mkdir -p /etc/apt/keyrings**
+- Ladataan Salt Projectin julkinen avain **curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp**
+- Luodaan konfigurointi repositorylle **curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources**
+- Päivitetään pakettilista **sudo apt-get update**
 
+Nyt siirryn Karvisen (2018) ohjeeseen https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
 
+- 
+  
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
