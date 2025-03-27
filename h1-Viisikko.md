@@ -133,6 +133,12 @@ Ajoin komennon uudelleen ja nyt tuli tällainen vastaus
 
 Näkisin, että tuo keskimmäinen rivi kertoo, että tuo tiedosto on jo olemassa. Ensimmäisellä kerralla tätä ei tullut. Eli tällä komennolla "touch" tapahtuu ainoastaan, jos "foo" nimistä tiedostoa ei vielä ole olemassa.
 
+## d) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
+
+Pakko lukea hieman aiheesta lisää ennen kuin alan väittelemään asiantuntijoiden kanssa. Nopealla googlauksella löysin tällaisen sivun: https://www.suomisanakirja.fi/idempotenssi
+
+
+
 
 
 
