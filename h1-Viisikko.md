@@ -32,7 +32,9 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Ainoastaan master-koneella täytyy olla julkinen osoite, orjat voivat olla "piilossa"
 - Orjat voivat olla NAT:n ja palomuurin takana, tuntemattomassa verkossa
 - Jos masterilla on palomuuri, tulee tehdä reiät palomuurin 4505/tcp ja 4506/tcp portteihin
+- Orjan tulee tietää, missä master on, orjille voi antaa oman id:n, jokaisella orjalla täytyy olla oma id
 ##### Karvinen 2006: [Raportin kirjoittaminen](https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/)
+- 
 ##### WMWare Inc: [Salt Install Guide: Linux (DEB)](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html) (poimi vain olennainen osa)
 
 
