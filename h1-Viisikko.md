@@ -18,7 +18,7 @@ Käyttöjärjestelmä: Windows 11 Pro 23H2
 
 #### Virtuaalikone
 Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
-6 Prosessoriydintä - 4GB RAM-muistia - 60GB tallennustilaa
+6 Prosessoriydintä - 8GiB RAM-muistia - 60GB tallennustilaa
 
 ## x) Lue ja tiivistä:
 
