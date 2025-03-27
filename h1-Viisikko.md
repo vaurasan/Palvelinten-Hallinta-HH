@@ -179,8 +179,10 @@ Seuraavaksi ajetaan sama komento uudelleen
 
 ![h107](images/h107.png)
 
+- Taas voidaan todeta, että ensimmäisellä kerralla apache2 käynnistettiin
+- Toisella kerralla todettiin, että apache2 on jo käynnissä, eikä ollut tarvetta käynnistää apachea
 
-
+---
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, http://terokarvinen.com<br><br>
