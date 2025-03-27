@@ -152,11 +152,11 @@ Luon saltilla käyttäjän *moikkelis*
 > 
 > [INFO    ] {'gid': 1001, 'groups': ['moikkelis'], 'home': '/home/moikkelis', 'name': 'moikkelis', 'passwd': 'x', 'shell': '/bin/sh', 'uid': 1001, 'fullname': '', 'roomnumber': '', 'workphone':
 >
-> > '', 'homephone': '', 'other': ''}
-> > 
+>  '', 'homephone': '', 'other': ''}
+>  
 > [INFO    ] Completed state [moikkelis] at time 13:17:56.928796 (duration_in_ms=39.27)
 
-Nyt ajan saman komennon uudelleen
+-Nyt ajan saman komennon uudelleen
 
 > [INFO    ] Loading fresh modules for state activity
 > 
@@ -168,9 +168,18 @@ Nyt ajan saman komennon uudelleen
 > 
 > [INFO    ] Completed state [moikkelis] at time 13:20:07.138252 (duration_in_ms=22.397)
 
-Ensimmäisellä kerralla toiseksi viimeisessä kohdassa luotiin käyttäjä *moikkelis* ja kotikansiot ym.
+-Ensimmäisellä kerralla toiseksi viimeisessä kohdassa luotiin käyttäjä *moikkelis* ja kotikansiot ym.
+-Toisella ajokerralla todettiin, että moikkelis niminen käyttäjä on olemassa, joten ei tarvinnut enää luoda uutta käyttäjää.
 
-Toisella ajokerralla todettiin, että moikkelis niminen käyttäjä on olemassa, joten ei tarvinnut enää luoda uutta käyttäjää.
+Kokeillaan käynnistää apache2 komennolla **sudo salt-call --local -l info state.single service.running apache2 enable=True**
+
+![h106](images/h106.png)
+
+Seuraavaksi ajetaan sama komento uudelleen
+
+![h107](images/h107.png)
+
+
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
