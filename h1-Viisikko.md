@@ -63,6 +63,10 @@ Lopulta poistin asennuksen, latasin toiseksi uusimman version 7.1 https://www.vi
 Loin vielä uuden Debianilla varustetun virtuaalikoeen ja tein perus alkuasetukset
 
 ## b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi)
+Tässä tulee kyseeseen X-kohdassa mainittu sivu https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html
+
+*27.3.2025 klo 9:54*
+
 
 
 
