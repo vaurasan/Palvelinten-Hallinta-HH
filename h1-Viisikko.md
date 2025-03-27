@@ -156,7 +156,7 @@ Luon saltilla käyttäjän *moikkelis*
 >  
 > [INFO    ] Completed state [moikkelis] at time 13:17:56.928796 (duration_in_ms=39.27)
 
--Nyt ajan saman komennon uudelleen
+- Nyt ajan saman komennon uudelleen
 
 > [INFO    ] Loading fresh modules for state activity
 > 
