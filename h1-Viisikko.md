@@ -117,7 +117,7 @@ Sieltä löytyy
 
 #### cmd
 cmd moduulilla voidaan ajattaa ehdollisia komentoja [salt.states.cmd](https://docs.saltproject.io/en/3006/ref/states/all/salt.states.cmd.html)
-- Kosketetaan tiedostoa "foo" komennolla "touch" ja luodaan tiedosto /tmp kansioon **sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"**
+- Kosketetaan tiedostoa "foo" komennolla "touch" **sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"**
 
 Touch muuttaa tiedoston aikaleimaa muuttamatta muuten itse tiedostoa.
 
@@ -126,8 +126,12 @@ Ajoin komennon uudelleen ja nyt tuli tällainen vastaus
 ![h105](images/h105.png)
 
 > [INFO    ] Executing state cmd.run for [touch /tmp/foo]
+> 
 > [INFO    ] ['/tmp/foo exists']
+> 
 > [INFO    ] Completed state [touch /tmp/foo] at time 12:53:50.814584 (duration_in_ms=877.91)
+
+Näkisin, että tuo keskimmäinen rivi kertoo, että tuo tiedosto on jo olemassa. Ensimmäisellä kerralla tätä ei tullut. Eli tällä komennolla "touch" tapahtuu ainoastaan, jos "foo" nimistä tiedostoa ei vielä ole olemassa.
 
 
 
