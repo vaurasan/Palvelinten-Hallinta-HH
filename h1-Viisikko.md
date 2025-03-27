@@ -135,11 +135,42 @@ Näkisin, että tuo keskimmäinen rivi kertoo, että tuo tiedosto on jo olemassa
 
 ## d) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
 
-Pakko lukea hieman aiheesta lisää ennen kuin alan väittelemään asiantuntijoiden kanssa. Nopealla googlauksella löysin tällaisen sivun: https://www.suomisanakirja.fi/idempotenssi
+Pakko lukea hieman aiheesta lisää ennen kuin alan väittelemään asiantuntijoiden kanssa. Nopealla googlauksella löysin tällaisen sivun: https://www.vpnunlimited.com/fi/help/cybersecurity/idempotence?srsltid=AfmBOorT1SZsUTWF3ssKdpj9vLexmDboTxrkzPebgf19PoLfy46Jw-pe
 
+Käytännössä siis idempotentti komento on sellainen, jonka suorittaminen useita kertoja, vaikuttaa samalla tavalla, kuin saman komennon suorittaminen yhden kerran. Lopputulos ei muutu, jos komentoa ajetaan useamman kerran.
 
+Luon saltilla käyttäjän *moikkelis*
+- ajan komennon **sudo salt-call --local -l info state.single user.present moikkelis**
 
+> [INFO    ] Loading fresh modules for state activity
+> 
+> [INFO    ] Running state [moikkelis] at time 13:17:56.889526
+> 
+> [INFO    ] Executing state user.present for [moikkelis]
+> 
+> [INFO    ] Executing command /usr/sbin/useradd in directory '/root'
+> 
+> [INFO    ] {'gid': 1001, 'groups': ['moikkelis'], 'home': '/home/moikkelis', 'name': 'moikkelis', 'passwd': 'x', 'shell': '/bin/sh', 'uid': 1001, 'fullname': '', 'roomnumber': '', 'workphone':
+>
+> > '', 'homephone': '', 'other': ''}
+> > 
+> [INFO    ] Completed state [moikkelis] at time 13:17:56.928796 (duration_in_ms=39.27)
 
+Nyt ajan saman komennon uudelleen
+
+> [INFO    ] Loading fresh modules for state activity
+> 
+> [INFO    ] Running state [moikkelis] at time 13:20:07.115855
+> 
+> [INFO    ] Executing state user.present for [moikkelis]
+> 
+> [INFO    ] User moikkelis is present and up to date
+> 
+> [INFO    ] Completed state [moikkelis] at time 13:20:07.138252 (duration_in_ms=22.397)
+
+Ensimmäisellä kerralla toiseksi viimeisessä kohdassa luotiin käyttäjä *moikkelis* ja kotikansiot ym.
+
+Toisella ajokerralla todettiin, että moikkelis niminen käyttäjä on olemassa, joten ei tarvinnut enää luoda uutta käyttäjää.
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
