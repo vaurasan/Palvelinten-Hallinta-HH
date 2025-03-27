@@ -43,7 +43,11 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Muista merkitä lähteet
 - Älä sepitä, vaan kerro rehellisesti mitä olet tehnyt, älä plagioi
 ##### WMWare Inc: [Salt Install Guide: Linux (DEB)](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html) (poimi vain olennainen osa)
-- 
+- Varmistetaan, että keyrings-kansio on olemassa
+- Ladataan Salt Projectin julkinen avain ja luodaan asetukset, jolla voidaan ladata ja asentaa Salt Project repositorystä **apt-get**:llä
+- Päivitetään metadata **sudo apt update**
+- Asennetaan salt-minion, salt-master, sekä muut Salt-komponentit
+- STS:ää ei suositella tuotantokäyttöön, Salt Project suosittelee LTS-julkaisuja tuotantoympäristöihin
 
 ## Otsikko
 
