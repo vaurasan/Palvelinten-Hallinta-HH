@@ -78,7 +78,8 @@ Sekä Karvisen (2018) https://terokarvinen.com/2018/03/28/salt-quickstart-salt-s
 - Testaan, että minulla on salt **sudo salt-call --version**, palautuu: "salt-call 3007.1 (Chlorine)", voidaan olettaa, että asennus onnistui
 
 ## c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
-
+#### pkg.installed
+- Komennolla **sudo salt-call --local -l info state.single pkg.installed tree** 
 
 
 
