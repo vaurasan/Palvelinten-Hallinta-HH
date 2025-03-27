@@ -78,16 +78,37 @@ Sekä Karvisen (2018) https://terokarvinen.com/2018/03/28/salt-quickstart-salt-s
 - Testaan, että minulla on salt **sudo salt-call --version**, palautuu: "salt-call 3007.1 (Chlorine)", voidaan olettaa, että asennus onnistui
 
 ## c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
+
+Näissä on tärkeä ymmärtää, että komennot ovat muodossa: lopputulos (idempotenssi (Karvisen luento 26.3.2025)) 
+
 #### pkg
 - Komennolla **sudo salt-call --local -l info state.single pkg.installed tree** tapahtui seuraavaa
 
 ![h101](images/h101.png)
 
-Täten voimme todeta, että **tree** asentui
+Täten voimme todeta, että **tree** asentui. Kävin vielä /usr/bin hakemistossa varmistamassa, että tree löytyy sieltä.
 Poistetaan **tree** komennolla **sudo salt-call --local -l info state.single pkg.removed tree**
 
 #### file
-- 
+- Loin tekstitiedoston **sudo salt-call --local -l info state.single file.managed /tmp/hello**
+- Poistin samaisen tiedoston **sudo salt-call --local -l info state.single file.absent /tmp/hellotero**
+- Loin tekstitiedoston sisällöltään "foo" **sudo salt-call --local -l info state.single file.managed /tmp/moi contents="foo"**
+
+![h102](images/h102.png)
+
+Kuten kuvasta näkyy, on hieman taidot ruosteessa, mutta ainakin tiedosto sieltä löytyy
+- Poistan vielä tuonkin tiedoston **sudo salt-call --local -l info state.single file.absent /tmp/moi**
+
+#### service
+Tätä varten täytyy ensin asentaa apache2: **sudo apt-get -y install apache2**
+- Nyt voidaan käskeä saltia käynnistämään apache2 **sudo salt-call --local -l info state.single service.running apache2 enable=True**
+
+![h103](images/h103.png)
+
+Toimii
+- Nyt voidaan sammuttaa saltilla apache2 **sudo salt-call --local -l info state.single service.dead apache2 enable=False**
+
+#### user
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
