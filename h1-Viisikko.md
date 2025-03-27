@@ -60,9 +60,9 @@ Poistin asennuksen ja asensin uudelleen pääkäyttäjänä, sama ongelma jatkui
 
 Lopulta poistin asennuksen, latasin toiseksi uusimman version 7.1 https://www.virtualbox.org/wiki/Download_Old_Builds ja se lähti toimimaan normaalisti.
 
-Loin vielä uuden Debianilla varustetun virtuaalikoeen
+Loin vielä uuden Debianilla varustetun virtuaalikoeen ja tein perus alkuasetukset
 
-## Otsikko
+## b) Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi)
 
 
 
