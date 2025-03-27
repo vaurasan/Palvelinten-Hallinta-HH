@@ -34,9 +34,16 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Jos masterilla on palomuuri, tulee tehdä reiät palomuurin 4505/tcp ja 4506/tcp portteihin
 - Orjan tulee tietää, missä master on, orjille voi antaa oman id:n, jokaisella orjalla täytyy olla oma id
 ##### Karvinen 2006: [Raportin kirjoittaminen](https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/)
-- 
+- Raportista tulee ilmetä mitä on tehty, sekä mitä seurauksia teoilla on ollut
+- Raporttia kannattaa kirjoittaa suoraan sähköisesti samalla kun tekee tehtäviä
+- Ongelmien tutkimisessa on hyvä kirjoittaa itselle muistiinpanoja, tämä selkeyttää asioita
+- Ympäristö tulee raportoida myös, jotta raportin tulos olisi toistettavissa. Eli siis testikokoonpano
+- Ole täsmällinen raportoidessa
+- Kirjoita selkeää tekstiä
+- Muista merkitä lähteet
+- Älä sepitä, vaan kerro rehellisesti mitä olet tehnyt, älä plagioi
 ##### WMWare Inc: [Salt Install Guide: Linux (DEB)](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html) (poimi vain olennainen osa)
-
+- 
 
 ## Otsikko
 
