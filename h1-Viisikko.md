@@ -76,11 +76,10 @@ Sekä Karvisen (2018) https://terokarvinen.com/2018/03/28/salt-quickstart-salt-s
 
 - Asennetaan salt-minion komennolla **sudo apt-get -y install salt-minion**
 - Testaan, että minulla on salt **sudo salt-call --version**, palautuu: "salt-call 3007.1 (Chlorine)", voidaan olettaa, että asennus onnistui
-- Asennetaan salt-master **sudo apt-get -y install salt-master**
 
-Jotta orja tietäisi, missä herra sijaitsee, täytyy muokata orjan tiedostoa 
-- **sudoedit /etc/salt/minion**
-- Muutan tiedoston alun master:n "salt":n "10.0.0.8" ja lisään id:n "santeri", jonka jälkeen käynnistän orjademonin uudelleen **sudo systemctl restart salt-minion.service**
+## c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
+
+
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
