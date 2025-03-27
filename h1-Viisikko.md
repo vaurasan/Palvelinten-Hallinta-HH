@@ -23,31 +23,31 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 ## x) Lue ja tiivistä:
 
 ##### Karvinen 2023: [Run Salt Command Locally](https://terokarvinen.com/2021/salt-run-command-locally/)
-- Salt-komentoja voidaan ajaa paikallisesti testimielessä
-- Samat komennot toimivat sekä Linuxissa, että Windowsissa
-- Tärkeimmät funktiot ovat: pkg, file, service, user ja cmd
-- Normaalisti Saltia käytetään ohjaamaan useita orjia verkon yli
+> - Salt-komentoja voidaan ajaa paikallisesti testimielessä
+> - Samat komennot toimivat sekä Linuxissa, että Windowsissa
+> - Tärkeimmät funktiot ovat: pkg, file, service, user ja cmd
+> - Normaalisti Saltia käytetään ohjaamaan useita orjia verkon yli
 ##### Karvinen 2018: [Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux](https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/)
-- Saltilla voidaan ohjata jopa tuhansia tietokoneita
-- Ainoastaan master-koneella täytyy olla julkinen osoite, orjat voivat olla "piilossa"
-- Orjat voivat olla NAT:n ja palomuurin takana, tuntemattomassa verkossa
-- Jos masterilla on palomuuri, tulee tehdä reiät palomuurin 4505/tcp ja 4506/tcp portteihin
-- Orjan tulee tietää, missä master on, orjille voi antaa oman id:n, jokaisella orjalla täytyy olla oma id
+> - Saltilla voidaan ohjata jopa tuhansia tietokoneita
+> - Ainoastaan master-koneella täytyy olla julkinen osoite, orjat voivat olla "piilossa"
+> - Orjat voivat olla NAT:n ja palomuurin takana, tuntemattomassa verkossa
+> - Jos masterilla on palomuuri, tulee tehdä reiät palomuurin 4505/tcp ja 4506/tcp portteihin
+> - Orjan tulee tietää, missä master on, orjille voi antaa oman id:n, jokaisella orjalla täytyy olla oma id
 ##### Karvinen 2006: [Raportin kirjoittaminen](https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/)
-- Raportista tulee ilmetä mitä on tehty, sekä mitä seurauksia teoilla on ollut
-- Raporttia kannattaa kirjoittaa suoraan sähköisesti samalla kun tekee tehtäviä
-- Ongelmien tutkimisessa on hyvä kirjoittaa itselle muistiinpanoja, tämä selkeyttää asioita
-- Ympäristö tulee raportoida myös, jotta raportin tulos olisi toistettavissa. Eli siis testikokoonpano
-- Ole täsmällinen raportoidessa
-- Kirjoita selkeää tekstiä
-- Muista merkitä lähteet
-- Älä sepitä, vaan kerro rehellisesti mitä olet tehnyt, älä plagioi
+> - Raportista tulee ilmetä mitä on tehty, sekä mitä seurauksia teoilla on ollut
+> - Raporttia kannattaa kirjoittaa suoraan sähköisesti samalla kun tekee tehtäviä
+> - Ongelmien tutkimisessa on hyvä kirjoittaa itselle muistiinpanoja, tämä selkeyttää asioita
+> - Ympäristö tulee raportoida myös, jotta raportin tulos olisi toistettavissa. Eli siis testikokoonpano
+> - Ole täsmällinen raportoidessa
+> - Kirjoita selkeää tekstiä
+> - Muista merkitä lähteet
+> - Älä sepitä, vaan kerro rehellisesti mitä olet tehnyt, älä plagioi
 ##### WMWare Inc: [Salt Install Guide: Linux (DEB)](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html) (poimi vain olennainen osa)
-- Varmistetaan, että keyrings-kansio on olemassa
-- Ladataan Salt Projectin julkinen avain ja luodaan asetukset, jolla voidaan ladata ja asentaa Salt Project repositorystä **apt-get**:llä
-- Päivitetään metadata **sudo apt update**
-- Asennetaan salt-minion, salt-master, sekä muut Salt-komponentit
-- STS:ää ei suositella tuotantokäyttöön, Salt Project suosittelee LTS-julkaisuja tuotantoympäristöihin
+> - Varmistetaan, että keyrings-kansio on olemassa
+> - Ladataan Salt Projectin julkinen avain ja luodaan asetukset, jolla voidaan ladata ja asentaa Salt Project repositorystä **apt-get**:llä
+> - Päivitetään metadata **sudo apt update**
+> - Asennetaan salt-minion, salt-master, sekä muut Salt-komponentit
+> - STS:ää ei suositella tuotantokäyttöön, Salt Project suosittelee LTS-julkaisuja tuotantoympäristöihin
 
 ## Otsikko
 
