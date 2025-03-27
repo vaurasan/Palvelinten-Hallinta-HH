@@ -50,9 +50,15 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 > - STS:ää ei suositella tuotantokäyttöön, Salt Project suosittelee LTS-julkaisuja tuotantoympäristöihin
 
 ## a) Asenna Debian 12-Bookworm virtuaalikoneeseen. (Poikkeuksellisesti tätä alakohtaa ei tarvitse raportoida, jos siinä ei ole mitään ongelmia. Mutta jos on ongelmia, sitten täsmällinen raportti, jotta voidaan ratkoa niitä yhdessä.)
+Minulla oli jo valmiiksi Oraclen Virtual Box ja siinä useampi Debian 12-Bookworm-käyttöjärjestelmällä oleva virtuaalikone. 
 
+Pari päivää sitten käynnistelin pienen tauon jälkeen Virtual Boxin ja sepä ei enää toiminutkaan, virtuaalikoneita ei pystynyt enää käynnistämään.
 
+Lueskelin Oraclen foorumeilta tietoja ja muillakin oli samanlaisia ongelmia.
 
+Poistin asennuksen ja asensin uudelleen pääkäyttäjänä, sama ongelma jatkui.
+
+Lopulta poistin asennuksen, latasin toiseksi uusimman version 7.1 https://www.virtualbox.org/wiki/Download_Old_Builds ja se lähti toimimaan normaalisti.
 
 ## Otsikko
 
