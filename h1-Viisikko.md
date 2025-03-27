@@ -79,8 +79,6 @@ Sekä Karvisen (2018) https://terokarvinen.com/2018/03/28/salt-quickstart-salt-s
 
 ## c) Viisi tärkeintä. Näytä Linuxissa esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
 
-Näissä on tärkeä ymmärtää, että komennot ovat muodossa: lopputulos (idempotenssi (Karvisen luento 26.3.2025)) 
-
 #### pkg
 - Komennolla **sudo salt-call --local -l info state.single pkg.installed tree** tapahtui seuraavaa
 
@@ -109,6 +107,29 @@ Toimii
 - Nyt voidaan sammuttaa saltilla apache2 **sudo salt-call --local -l info state.single service.dead apache2 enable=False**
 
 #### user
+- Luodaan saltilla uusi käyttäjä **sudo salt-call --local -l info state.single user.present sinteri**
+- Katson onko käyttäjä luotu **cat /etc/passwd**
+
+![h104](images/h104.png)
+
+Sieltä löytyy
+- Nyt voin poistaa käyttäjän sinteri komennolla **sudo salt-call --local -l info state.single user.absent sinteri**
+
+#### cmd
+cmd moduulilla voidaan ajattaa ehdollisia komentoja [salt.states.cmd](https://docs.saltproject.io/en/3006/ref/states/all/salt.states.cmd.html)
+- Kosketetaan tiedostoa "foo" komennolla "touch" ja luodaan tiedosto /tmp kansioon **sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"**
+
+Touch muuttaa tiedoston aikaleimaa muuttamatta muuten itse tiedostoa.
+
+Ajoin komennon uudelleen ja nyt tuli tällainen vastaus
+
+![h105](images/h105.png)
+
+> [INFO    ] Executing state cmd.run for [touch /tmp/foo]
+> [INFO    ] ['/tmp/foo exists']
+> [INFO    ] Completed state [touch /tmp/foo] at time 12:53:50.814584 (duration_in_ms=877.91)
+
+
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
