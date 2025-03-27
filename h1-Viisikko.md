@@ -168,8 +168,8 @@ Luon saltilla käyttäjän *moikkelis*
 > 
 > [INFO    ] Completed state [moikkelis] at time 13:20:07.138252 (duration_in_ms=22.397)
 
--Ensimmäisellä kerralla toiseksi viimeisessä kohdassa luotiin käyttäjä *moikkelis* ja kotikansiot ym.
--Toisella ajokerralla todettiin, että moikkelis niminen käyttäjä on olemassa, joten ei tarvinnut enää luoda uutta käyttäjää.
+- Ensimmäisellä kerralla toiseksi viimeisessä kohdassa luotiin käyttäjä *moikkelis* ja kotikansiot ym.
+- Toisella ajokerralla todettiin, että moikkelis niminen käyttäjä on olemassa, joten ei tarvinnut enää luoda uutta käyttäjää.
 
 Kokeillaan käynnistää apache2 komennolla **sudo salt-call --local -l info state.single service.running apache2 enable=True**
 
