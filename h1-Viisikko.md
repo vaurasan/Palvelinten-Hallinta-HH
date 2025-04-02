@@ -89,7 +89,7 @@ Poistetaan **tree** komennolla **sudo salt-call --local -l info state.single pkg
 
 #### file
 - Loin tekstitiedoston **sudo salt-call --local -l info state.single file.managed /tmp/hello**
-- Poistin samaisen tiedoston **sudo salt-call --local -l info state.single file.absent /tmp/hellotero**
+- Poistin samaisen tiedoston **sudo salt-call --local -l info state.single file.absent /tmp/hello**
 - Loin tekstitiedoston sisällöltään "foo" **sudo salt-call --local -l info state.single file.managed /tmp/moi contents="foo"**
 
 ![h102](images/h102.png)
