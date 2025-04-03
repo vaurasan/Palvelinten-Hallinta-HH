@@ -192,6 +192,11 @@ sudo salt '*' state.apply create
 ```
 Erroria tulee, ehkä jätän tämän suunnitelman ja teen yksinkertaisemmin
 ![209](images/h209.png)
+```
+sudo salt slave state.single user.present perus
+sudo salt slave state.single pkg.installed apache2
+sudo salt slave state.single file.managed /tmp/masterillatehty
+```
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
