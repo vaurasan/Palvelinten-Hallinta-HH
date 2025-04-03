@@ -33,10 +33,14 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Tulee olla yksi master, joka hallitsee orjia
 - Salt master asennetaan master koneeseen **sudo apt-get -y install salt-master**, jos master on palomuurin takana, tulee tehdä palomuuriin reiät 4505/tcp, sekä 4506/tcp
 - Salt slave asennetaan slave koneeseen **sudo apt-get -y install salt-minion**
-- Orjan täytyy tietää, missä master on, jokaisella orjalla täytyy olla yksilöllinen ID
-- 
+- Orjan täytyy tietää, missä master on, jokaisella orjalla täytyy olla yksilöllinen ID **sudoedit /etc/salt/minion**, tämän jälkeen potkaistaan demonia **sudo systemctl restart salt-minion.service**
 
-#### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
+    master: 10.0.0.88
+
+    id: tero
+- Hyväksytään uudet orjat masterilla **sudo salt-key -A**
+
+#### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) vain kohdat **Infra as Code - Your wishes as a text file** ja **top.sls - What Slave Runs What States**
 -
 -
 -
