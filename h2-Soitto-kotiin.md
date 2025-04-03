@@ -173,7 +173,7 @@ Ilmeisesti annoin väärän IP-osoitteen slavelle, kokeilen käydä muuttamassa 
 
 Ei toiminut vieläkään, kokeilen vaihtaa IP-osoitteen takaisin, uusi yritys
 
-Ei toimi edelleenkään, kokeilen lisätä ID:n seuraavalle riville, tämäkään ei auta kummallakaan IP-osoitteella
+Ei toimi edelleenkään, kokeilen lisätä ID:n seuraavalle riville, tämäkään ei auta kummallakaan IP-osoitteella, yritin vielä IPv6 osoitteella. Lopulta tajusin ottaa Vagrantfileen lisäämäni masterin IP osoitteen 192.168.88.101 ja sillä toimii.
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
 
