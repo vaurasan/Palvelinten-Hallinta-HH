@@ -173,6 +173,7 @@ Ei toimi edelleenkään, kokeilen lisätä ID:n seuraavalle riville, tämäkää
 ```
 sudo salt '*' cmd.run 'whoami'
 ```
+
 ![h207](images/h207.png)
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
@@ -191,7 +192,9 @@ sudo salt '*' state.apply run
 sudo salt '*' state.apply create
 ```
 Erroria tulee, ehkä jätän tämän suunnitelman ja teen yksinkertaisemmin
+
 ![209](images/h209.png)
+
 ```
 sudo salt slave state.single user.present perus
 sudo salt slave state.single pkg.installed apache2
@@ -204,18 +207,22 @@ vagrant ssh slave
 cat /etc/passwd
 ```
 "perus" käyttäjä löytyy
+
 ![210](images/h210.png)
+
 ```
 dpkg --get-selections | grep apache
 ```
 Tämän komennon lainasin täältä https://superuser.com/questions/387948/how-can-i-determine-if-apache-is-installed-on-a-system
 
 Navigoin vielä /tmp
+
 ```
 cd /tmp
 ls
 ```
 Apache2 on selkeästi asennettu ja "masterillatehty" löytyy /tmp kansiosta. Näin saatiin masterilla slave tekemään haluamame asiat
+
 ![h211](images/h211.png)
 
 ---
