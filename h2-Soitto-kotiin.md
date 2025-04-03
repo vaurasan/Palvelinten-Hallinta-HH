@@ -41,17 +41,30 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Hyväksytään uudet orjat masterilla **sudo salt-key -A**
 
 #### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) vain kohdat **Infra as Code - Your wishes as a text file** ja **top.sls - What Slave Runs What States**
+
+##### Infra as Code
+
 - Jos Salt:ssa halutaan luoda infraa koodina, on luotava kansio **sudo mkdir -p /srv/salt/hello** ja kansioon tiedosto **sudoedit /srv/salt/hello/init.sls** (komennot kirjoitetaan init.sls tiedostoon)
 ```
 /tmp/infra-as-code:  
   file.managed
 ```
 - Huom. YAML syntaksia, joten "file.managed" rivillä on kaksi välilyöntiä, ei tabia
-```
-sudo salt '*' state.apply hello
-```
-- 
+- **sudo salt '*' state.apply hello** <- asetetaan tila kaikille orjille tiedoston perusteella
+  
+##### top.sls
 
+Salt Projectin sivuilta https://docs.saltproject.io/en/3006/ref/states/top.html löysin tähän hieman lisää sisältöä. top.sls on "päällimmäinen" tiedosto, jolla määritetään ryhmille erilaisia rooleja. Esim. web-palvelinkoneella tulee aina olla asennettuna apache2 web-palvelinohjelmisto. Eli kuten Karvisen (2023) ohjeessa lukee: Top-tiedosto määrittää mitä tiloja ajetaan millekin orjille.
+```
+sudo salt '*' state.apply hello^C
+sudoedit /srv/salt/top.sls
+cat /srv/salt/top.sls
+base:
+  '*':
+    - hello
+```
+- ^ Tällä esimerkillä asetetaan kaikille orjille hello.sls:n sisältämät käskyt
+- Esimerkissä **- hello** ajaa siis hello.sls tiedoston, lisää tiedostoja voidaan lisätä tuohon alle tarvittaessa
 
 ## a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.)
 
