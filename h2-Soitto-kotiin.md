@@ -40,7 +40,7 @@ id: tero
 
 ##### Infra as Code
 
-- Jos Salt:ssa halutaan luoda infraa koodina, on luotava kansio **sudo mkdir -p /srv/salt/hello** ja kansioon tiedosto **sudoedit /srv/salt/hello/init.sls** (komennot kirjoitetaan init.sls tiedostoon)
+- Jos Salt:ssa halutaan luoda infraa koodina, on luotava kansio, esimerkiksi "hello" **sudo mkdir -p /srv/salt/hello** ja kansioon tiedosto **sudoedit /srv/salt/hello/init.sls** (komennot kirjoitetaan init.sls tiedostoon)
 ```
 /tmp/infra-as-code:  
   file.managed
