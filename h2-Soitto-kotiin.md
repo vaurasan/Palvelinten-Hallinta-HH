@@ -111,6 +111,10 @@ Komennolla Vagrant loi kaksi virtuaalikonetta. Kokeilen ottaa yhteyden koneisiin
 
 Hetken mietin, että mistä tiedän näiden koneiden IP-osoitteet, mutta Karvisen scriptissä koneille annetaan valmiit private_network osoitteet, jotka ovat: t001 **192.168.88.101** ja t002 **192.168.88.102**
 
+Huomion arvoista, että tässä täytyi lopettaa pingaus Ctrl+C:llä, olisi muuten varmaan jatkunut loputtomasti
+
+![204](images/h204.png)
+
 ## d) Herra-orja verkossa. Demonstroi Salt herra-orja arkkitehtuurin toimintaa kahden Linux-koneen verkossa, jonka teit Vagrantilla. Asenna toiselle koneelle salt-master, toiselle salt-minion. Laita orjan /etc/salt/minion -tiedostoon masterin osoite. Hyväksy avain ja osoita, että herra voi komentaa orjakonetta
 
 
