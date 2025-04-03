@@ -117,9 +117,26 @@ Huomion arvoista, että tässä täytyi lopettaa pingaus Ctrl+C:llä, olisi muut
 
 ## d) Herra-orja verkossa. Demonstroi Salt herra-orja arkkitehtuurin toimintaa kahden Linux-koneen verkossa, jonka teit Vagrantilla. Asenna toiselle koneelle salt-master, toiselle salt-minion. Laita orjan /etc/salt/minion -tiedostoon masterin osoite. Hyväksy avain ja osoita, että herra voi komentaa orjakonetta
 
-Poistin edelliset virtuaalikoneet ja menin muokkaamaan Vagrantfile tiedostoa. Tässä vaiheessa huomasin, että olin jättänyt scriptiin debian/bullseye64:n, vaihdan sen bookwormiin, muutan samalla "t001" ja "t002" nimet "master" ja "slave":ksi
-
-
+Poistin edelliset virtuaalikoneet ja menin muokkaamaan Vagrantfile tiedostoa. Tässä vaiheessa huomasin, että olin jättänyt scriptiin debian/bullseye64:n, vaihdan sen bookwormiin, muutan samalla "t001" ja "t002" nimet "master" ja "slave":ksi. vagrant up:lla luon koneet. Seuraavaksi asennetaan Salt molempiin koneisiin ja konfiguroidaan ne toimimaan halutulla tavalla.
+```
+vagrant up
+vagrant ssh master
+sudo apt-get update
+sudo apt-get -y install salt-master
+```
+Vaan eipä tietenkään tällä saada Saltia asennettua, koska sitä ei löydy apt-get:sta. Täytyy siis palata h1 tehtävän Salt asennukseen.
+```
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
+```
+Curlia ei ole asennettu, joten asennetaan se
+```
+sudo apt-get install curl
+```
+Uudelleen äskeinen curl-komento ja sitten
+```
+curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
+```
 
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
