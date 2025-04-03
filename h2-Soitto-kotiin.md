@@ -197,7 +197,28 @@ sudo salt slave state.single user.present perus
 sudo salt slave state.single pkg.installed apache2
 sudo salt slave state.single file.managed /tmp/masterillatehty
 ```
+Menen orjana katsomaan toimiko nämä
+```
+exit
+vagrant ssh slave
+cat /etc/passwd
+```
+"perus" käyttäjä löytyy
+![210](images/h210.png)
+```
+dpkg --get-selections | grep apache
+```
+Tämän komennon lainasin täältä https://superuser.com/questions/387948/how-can-i-determine-if-apache-is-installed-on-a-system
 
+Navigoin vielä /tmp
+```
+cd /tmp
+ls
+```
+Apache2 on selkeästi asennettu ja "masterillatehty" löytyy /tmp kansiosta. Näin saatiin masterilla slave tekemään haluamame asiat
+![h211](images/h211.png)
+
+---
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, https://terokarvinen.com/palvelinten-hallinta/<br><br>
