@@ -41,9 +41,13 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Hyväksytään uudet orjat masterilla **sudo salt-key -A**
 
 #### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) vain kohdat **Infra as Code - Your wishes as a text file** ja **top.sls - What Slave Runs What States**
-- 
--
--
+- Jos Salt:ssa halutaan luoda infraa koodina, on luotava kansio **sudo mkdir -p /srv/salt/hello** ja kansioon tiedosto **sudoedit /srv/salt/hello/init.sls** (komennot kirjoitetaan init.sls tiedostoon)
+```
+/tmp/infra-as-code:  
+  file.managed
+```
+- Huom. YAML syntaksia, joten "file.managed" rivillä on kaksi välilyöntiä, ei tabia
+
 
 
 
