@@ -169,9 +169,11 @@ sudo salt-key -A
 
 ![206](images/h206.png)
 
-Ilmeisesti annoin väärän IP-osoitteen slavelle, kokeilen käydä muuttamassa sen tuohon **10.0.2.15**, joka näkyi myös masterilla
+Ilmeisesti annoin väärän IP-osoitteen slavelle, kokeilen käydä muuttamassa sen tuohon **10.0.2.15**, joka näkyi myös masterilla, olin näköjään jättänyt kaksoispisteen pois ":"
 
+Ei toiminut vieläkään, kokeilen vaihtaa IP-osoitteen takaisin, uusi yritys
 
+Ei toimi edelleenkään, kokeilen lisätä ID:n seuraavalle riville, tämäkään ei auta kummallakaan IP-osoitteella
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
 
