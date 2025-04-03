@@ -47,8 +47,10 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
   file.managed
 ```
 - Huom. YAML syntaksia, joten "file.managed" rivillä on kaksi välilyöntiä, ei tabia
-
-
+```
+sudo salt '*' state.apply hello
+```
+- 
 
 
 ## a) Hello Vagrant! Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset. (Jos Vagrant ja VirtualBox on jo asennettu, niiden asennusta ei tarvitse tehdä eikä raportoida uudelleen.)
