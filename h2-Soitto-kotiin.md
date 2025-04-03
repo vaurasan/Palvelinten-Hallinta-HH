@@ -30,10 +30,10 @@ Käyttöjärjestelmä: Windows 11 Pro 24H2
 - Salt master asennetaan master koneeseen **sudo apt-get -y install salt-master**, jos master on palomuurin takana, tulee tehdä palomuuriin reiät 4505/tcp, sekä 4506/tcp
 - Salt slave asennetaan slave koneeseen **sudo apt-get -y install salt-minion**
 - Orjan täytyy tietää, missä master on, jokaisella orjalla täytyy olla yksilöllinen ID **sudoedit /etc/salt/minion**, tämän jälkeen potkaistaan demonia **sudo systemctl restart salt-minion.service**
-
-    master: 10.0.0.88
-
-    id: tero
+```
+master: 10.0.0.88
+id: tero
+```
 - Hyväksytään uudet orjat masterilla **sudo salt-key -A**
 
 #### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) vain kohdat **Infra as Code - Your wishes as a text file** ja **top.sls - What Slave Runs What States**
@@ -177,7 +177,12 @@ sudo salt '*' cmd.run 'whoami'
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
 
+Lähdin mahdollisesti haukkaamaan hieman isompaa palasta heti kättelyssä, tarkoituksena on tehdä tiedostot masterille millä kaikille orjille:
+- asennetaan apache2
+- käynnistetään apache2
+- luodaan käyttäjä nimeltä **kayttaja**
 
+![h028](images/h208.png)
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
