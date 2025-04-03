@@ -24,7 +24,7 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 
 #### Karvinen 2021: [Two Machine Virtual Network With Debian 11 Bullseye and Vagrant](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/) (Huomaa: nykyinen Debian stable on 12-Bookworm, Vagrantissa "debian/bookworm64". Vanhentunutta 11-bullseye:ta ei enää käytetä)
 - Vagrant: pystyttää automaattisesti Virtualbox koneita, automatisoi SSH-kirjautumisen, ei vaadi graafista käyttöliittymää
-- Vagrant asennetaan apt-get:llä: **sudo apt-get install vagrant virtualbox**
+- Vagrant asennetaan Linuxiin apt-get:llä: **sudo apt-get install vagrant virtualbox**
 - Jos käytät Windowsia tai Mac:ia, tulee ladata Vagrant installer pääkäyttöjärjestelmällesi. (Vagrant ei virtualisoi virtualisoinnin päällä (Karvinen luento 2.4.2025))(Tässä vaiheessa myös asensin Vagrantin Windowsilleni ja käynnistin koneen uudelleen, koska niin täytyy tehdä asentaessa Windowsille)
 - Vagrantilla luodut hostit pystyvät ottamaan yhteyden toisiinsa, sekä internetiin
 
@@ -73,6 +73,8 @@ Avasin Windowsin cmd:n järjestelmänvalvojana ja kokeilin ajaa pari Vagrant kom
 ![h202](h202.png)
 
 Pitää lukea lisää Vagrantista https://developer.hashicorp.com/vagrant/tutorials/get-started/development-environment?productSlug=vagrant&tutorialSlug=getting-started&tutorialSlug=getting-started-boxes ja https://developer.hashicorp.com/vagrant/docs/installation.
+
+Luin vielä ohjeita https://www.vagrantup.com/, Vagrant on siis oikein asentunut, kokeilin vielä **vagrant --help** komentoa, joka toimi ihan oikealla tavalla.
 
 
 
