@@ -70,7 +70,7 @@ base:
 
 Avasin Windowsin cmd:n järjestelmänvalvojana ja kokeilin ajaa pari Vagrant komentoa, ei mennyt aivan putkeen. En ole varma onko järkevää tehdä tuota System32 kansiossa muutenkaan, koska Vagrant alkaa näemmä tekemään sinne uusia tiedostoja.
 
-![h202](h202.png)
+![h202](images/h202.png)
 
 Pitää lukea lisää Vagrantista https://developer.hashicorp.com/vagrant/tutorials/get-started/development-environment?productSlug=vagrant&tutorialSlug=getting-started&tutorialSlug=getting-started-boxes ja https://developer.hashicorp.com/vagrant/docs/installation.
 
