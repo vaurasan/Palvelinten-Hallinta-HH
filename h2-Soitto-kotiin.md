@@ -23,7 +23,7 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva. Ei siis vaadita pitkää eikä essee-muotoista tiivistelmää.)
 
 #### Karvinen 2021: [Two Machine Virtual Network With Debian 11 Bullseye and Vagrant](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/) (Huomaa: nykyinen Debian stable on 12-Bookworm, Vagrantissa "debian/bookworm64". Vanhentunutta 11-bullseye:ta ei enää käytetä)
--
+- Vagrant: pystyttää automaattisesti Virtualbox koneita, automatisoi SSH-kirjautumisen, ei vaadi graafista käyttöliittymää
 -
 -
 
