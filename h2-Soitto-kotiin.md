@@ -82,6 +82,13 @@ Hetken jouduin miettimään, että miten saan Windowsin komentokehotteessa muoka
 
 Nyt teen Karvisen (2021) ohjeen mukaisesti tämän ja luon C:/ asemalle kansion twohost/ komennolla **md twohost**
 
+Luon Vagrantfilen, jonne kopioin Karvisen scriptin
+```
+notepad Vagrantfile
+```
+![203](images/h203.png)
+
+
 
 
 ## c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan
