@@ -184,6 +184,15 @@ Lähdin mahdollisesti haukkaamaan hieman isompaa palasta heti kättelyssä, tark
 
 ![h028](images/h208.png)
 
+Tämän jälkeen ajan komennot
+```
+sudo salt '*' state.apply apasse
+sudo salt '*' state.apply run
+sudo salt '*' state.apply create
+```
+Erroria tulee, ehkä jätän tämän suunnitelman ja teen yksinkertaisemmin
+![209](images/h209.png)
+
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, https://terokarvinen.com/palvelinten-hallinta/<br><br>
