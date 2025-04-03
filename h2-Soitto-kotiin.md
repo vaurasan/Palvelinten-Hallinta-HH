@@ -80,8 +80,13 @@ Luin vielä ohjeita https://www.vagrantup.com/, Vagrant on siis oikein asentunut
 
 Hetken jouduin miettimään, että miten saan Windowsin komentokehotteessa muokattua Vagrantfileä, jotta pääsen laittamaan virtuaalikoneita pystyyn. https://superuser.com/questions/186857/how-do-i-edit-text-files-in-the-windows-command-prompt Täältä löytyi ajatus käyttää notepad <tiedostonimi>, mutta se avaa graafiseen käyttöliittymään nodepadin, saa kelvata nyt tässä. Toinen tapa samasta lähteestä olisi ladata Windowsille esimerkiksi nano ja käyttää sitä SSH:lla nano.exe <tiedostonimi>, tämä kaiketi vaatii että on Git asennettuna.
 
-Luon kansion nimeltä unohost komennolla **md unohost**
-
+Luon C:/ asemalle kansion nimeltä unohost ja sinne yhden koneen Vagrantin
+```
+md unohost
+cd unohost
+vagrant init debian/bookworm64
+vagrant up
+```
 
 
 
