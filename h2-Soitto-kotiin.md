@@ -137,17 +137,20 @@ Uudelleen äskeinen curl-komento ja sitten
 ```
 curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
 ```
-Näillä luodaan luottamussuhde Saltiin ja voidaan pakettilistan päivityksen jälkeen asentaa Salt.
+Näillä luodaan luottamussuhde Saltiin ja voidaan pakettilistan päivityksen jälkeen asentaa Salt. Huomasin seuraavassa kohdassa, että jos pakettilistaa ei tässä vaiheessa päivitä, ei pakettia löydy.
 ```
 sudo apt-get update
 sudo apt-get -y install salt-master
 hostname -I
+exit
 ```
 Otan IP:t talteen myöhempää käyttöä varten
 
 ![205](images/h205.png)
 
-Nyt teen saman operaation slavelle
+Nyt teen saman alustuksen slavelle ja asennan salt-minionin
+
+
 
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
