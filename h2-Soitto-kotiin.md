@@ -80,20 +80,20 @@ Luin vielä ohjeita https://www.vagrantup.com/, Vagrant on siis oikein asentunut
 
 Hetken jouduin miettimään, että miten saan Windowsin komentokehotteessa muokattua Vagrantfileä, jotta pääsen laittamaan virtuaalikoneita pystyyn. https://superuser.com/questions/186857/how-do-i-edit-text-files-in-the-windows-command-prompt Täältä löytyi ajatus käyttää notepad <tiedostonimi>, mutta se avaa graafiseen käyttöliittymään nodepadin, saa kelvata nyt tässä. Toinen tapa samasta lähteestä olisi ladata Windowsille esimerkiksi nano ja käyttää sitä SSH:lla nano.exe <tiedostonimi>, tämä kaiketi vaatii että on Git asennettuna.
 
-Nyt teen Karvisen (2021) ohjeen mukaisesti tämän ja luon C:/ asemalle kansion twohost/ komennolla **md twohost**
-
-Luon Vagrantfilen, jonne kopioin Karvisen scriptin
-```
-notepad Vagrantfile
-```
-![203](images/h203.png)
+Luon kansion nimeltä unohost komennolla **md unohost**
 
 
 
 
 ## c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan
 
+Nyt teen Karvisen (2021) ohjeen mukaisesti tämän ja luon C:/ asemalle kansion twohost/ 
 
+Luon Vagrantfilen, jonne kopioin Karvisen scriptin
+```
+notepad Vagrantfile
+```
+![203](images/h203.png)
 
 
 
