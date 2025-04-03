@@ -31,7 +31,9 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 #### Karvinen 2018: [Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux](https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux) (Huomaa: Nykyisin ennen Saltin asentamista on asennettava ensin varasto [package repository], ohje h1 vinkeissä)
 - Salt:lla pystyy hallitsemaan halutessaan vaikka tuhatta konetta kerralla
 - Tulee olla yksi master, joka hallitsee orjia
-- Salt master asennetaan **sudo apt-get -y install salt-master**, jos master on palomuurin takana, tulee tehdä palomuuriin reiät 4505/tcp, sekä 4506/tcp
+- Salt master asennetaan master koneeseen **sudo apt-get -y install salt-master**, jos master on palomuurin takana, tulee tehdä palomuuriin reiät 4505/tcp, sekä 4506/tcp
+- Salt slave asennetaan slave koneeseen **sudo apt-get -y install salt-minion**
+- Orjan täytyy tietää, missä master on, jokaisella orjalla täytyy olla yksilöllinen ID
 - 
 
 #### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
