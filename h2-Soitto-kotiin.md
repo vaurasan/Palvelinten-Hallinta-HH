@@ -117,6 +117,9 @@ Huomion arvoista, että tässä täytyi lopettaa pingaus Ctrl+C:llä, olisi muut
 
 ## d) Herra-orja verkossa. Demonstroi Salt herra-orja arkkitehtuurin toimintaa kahden Linux-koneen verkossa, jonka teit Vagrantilla. Asenna toiselle koneelle salt-master, toiselle salt-minion. Laita orjan /etc/salt/minion -tiedostoon masterin osoite. Hyväksy avain ja osoita, että herra voi komentaa orjakonetta
 
+Poistin edelliset virtuaalikoneet ja menin muokkaamaan Vagrantfile tiedostoa. Tässä vaiheessa huomasin, että olin jättänyt scriptiin debian/bullseye64:n, vaihdan sen bookwormiin, muutan samalla "t001" ja "t002" nimet "master" ja "slave":ksi
+
+
 
 
 ## e) Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)
