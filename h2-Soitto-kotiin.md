@@ -41,7 +41,7 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Hyväksytään uudet orjat masterilla **sudo salt-key -A**
 
 #### Karvinen 2023: [Salt Vagrant - automatically provision one master and two slaves](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file) vain kohdat **Infra as Code - Your wishes as a text file** ja **top.sls - What Slave Runs What States**
--
+- 
 -
 -
 
