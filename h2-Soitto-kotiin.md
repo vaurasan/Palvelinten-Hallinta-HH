@@ -148,7 +148,7 @@ Otan IP:t talteen myöhempää käyttöä varten
 
 ![205](images/h205.png)
 
-Nyt teen saman alustuksen slavelle ja asennan salt-minionin. Koska orjan täytyy tietää missä herra sijaitsee, on kerrottava orjalle herran sijainti. Nyt tulee kyseeseen aiemmin talteen otettu masterin IP-osoite
+Nyt teen saman alustuksen slavelle ja asennan salt-minionin. Koska orjan täytyy tietää missä herra sijaitsee, on kerrottava orjalle herran sijainti. Nyt tulee kyseeseen aiemmin talteen otettu masterin IP-osoite, lisään IP-osoitteen tekstitiedoston alkuun.
 ```
 sudo apt-get update
 sudo apt-get -y install salt-minion
