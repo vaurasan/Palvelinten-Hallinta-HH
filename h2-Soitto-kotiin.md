@@ -105,7 +105,7 @@ vagrant up
 ```
 Komennolla Vagrant loi kaksi virtuaalikonetta. Kokeilen ottaa yhteyden koneisiin ja pingailen niillä toisiaan.
 
-Hetken mietin, että mistä tiedän näiden koneiden IP-osoitteet, mutta Karvisen scriptissä koneille annetaan valmiit private_network osoitteet, jotka ovat: t001 **192.168.88.101** ja t002 **192.168.88.102**
+Hetken mietin, että mistä tiedän näiden koneiden IP-osoitteet, mutta Karvisen scriptissä koneille annetaan valmiit private_network osoitteet, jotka ovat: **t001 192.168.88.101** ja **t002 192.168.88.102**
 
 Huomion arvoista, että tässä täytyi lopettaa pingaus Ctrl+C:llä, olisi muuten varmaan jatkunut loputtomasti
 
