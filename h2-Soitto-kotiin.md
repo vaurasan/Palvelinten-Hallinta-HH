@@ -20,11 +20,6 @@ Käyttöjärjestelmä: Windows 11 Pro 23H2
 Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 6 Prosessoriydintä - 4GB RAM-muistia - 60GB tallennustilaa
 
-#### Palvelin
-UpCloud<br>
-Debian 12 GNU/Linux (bookworm)<br>
-1 Prosessoriydin - 1GB RAM-muistia - 10GB tallennustilaa
-
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva. Ei siis vaadita pitkää eikä essee-muotoista tiivistelmää.)
 
 #### Karvinen 2021: [Two Machine Virtual Network With Debian 11 Bullseye and Vagrant](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/)
