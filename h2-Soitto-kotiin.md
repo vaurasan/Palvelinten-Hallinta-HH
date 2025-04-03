@@ -14,7 +14,7 @@
 | Virtalähde   | Asus 750W TUF Gaming Gold        | ATX 80 Plus      |
 | Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
 
-Käyttöjärjestelmä: Windows 11 Pro 23H2
+Käyttöjärjestelmä: Windows 11 Pro 24H2
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva. Ei siis vaadita pitkää eikä essee-muotoista tiivistelmää.)
 
