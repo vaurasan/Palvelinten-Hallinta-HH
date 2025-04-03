@@ -148,7 +148,7 @@ Otan IP:t talteen myöhempää käyttöä varten
 
 ![205](images/h205.png)
 
-Nyt teen saman alustuksen slavelle ja asennan salt-minionin. Koska orjan täytyy tietää missä herra sijaitsee, on kerrottava orjalle herran sijainti. Nyt tulee kyseeseen aiemmin talteen otettu masterin IP-osoite, lisään IP-osoitteen tekstitiedoston alkuun.
+Nyt teen saman alustuksen slavelle ja asennan salt-minionin. Koska orjan täytyy tietää missä herra sijaitsee, on kerrottava orjalle herran sijainti. Nyt tulee kyseeseen aiemmin talteen otettu masterin IP-osoite, lisään IP-osoitteen tekstitiedoston alkuun. Tämän jälkeen käynnistän salt-minion demonin uudelleen
 ```
 sudo apt-get update
 sudo apt-get -y install salt-minion
@@ -157,8 +157,19 @@ sudoedit /etc/salt/minion
 ```
 master 192.168.88.101
 ```
+```
+sudo systemctl restart salt-minion.service
+```
+Nyt voidaan mennä masterina sisään ja hyväksyä slave Key
+```
+exit
+vagrant ssh master
+sudo salt-key -A
+```
 
+![206](images/h206.png)
 
+Ilmeisesti annoin väärän IP-osoitteen slavelle, kokeilen käydä muuttamassa sen tuohon **10.0.2.15**, joka näkyi myös masterilla
 
 
 
