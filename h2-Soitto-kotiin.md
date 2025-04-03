@@ -86,9 +86,15 @@ md unohost
 cd unohost
 vagrant init debian/bookworm64
 vagrant up
+vagrant ssh
 ```
+![201](images/h201.png)
 
-
+Nyt on Vagrant toiminnassa Windowsin komentokehotteessa. Poistun ja poistan vielä tämän
+```
+exit
+vagrant destroy
+```
 
 ## c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan
 
