@@ -98,15 +98,16 @@ vagrant destroy
 
 ## c) Kaksin kaunihimpi. Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pingata toisiaan
 
-Nyt teen Karvisen (2021) ohjeen mukaisesti tämän ja luon C:/ asemalle kansion twohost/ 
-
-Luon Vagrantfilen, jonne kopioin Karvisen scriptin
+Luon kansion "twohost" ja luon sinne kaksi erillistä konetta
 ```
-notepad Vagrantfile
+md twohost
+vagrant init debian/bookworm64
 ```
-![203](images/h203.png)
-
-
+Kokeilen laittaa Karvisen [(2021)](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/) scriptin Vagrantfileen ja luoda sillä "t001" ja "t002" virtuaalikoneet
+```
+vagrant up
+```
+Komennolla Vagrant loi kaksi virtuaalikonetta. Kokeilen ottaa yhteyden koneisiin ja pingailen niillä toisiaan
 
 ## d) Herra-orja verkossa. Demonstroi Salt herra-orja arkkitehtuurin toimintaa kahden Linux-koneen verkossa, jonka teit Vagrantilla. Asenna toiselle koneelle salt-master, toiselle salt-minion. Laita orjan /etc/salt/minion -tiedostoon masterin osoite. Hyväksy avain ja osoita, että herra voi komentaa orjakonetta
 
