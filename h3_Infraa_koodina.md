@@ -52,16 +52,16 @@ YAML simple structure
   - **Scalar**, avain: arvo pari, joissa arvo voi olla numero, merkkijono, tai [totuusarvo](https://www.sanakirja.org/search.php?id=90117&l2=17) (boolean)
   ```YAML
   ruoka: makkara
-  auto: tersel
+  rakennus: kerrostalo
   ```
   - **List**, avain:, jonka jälkeen voi olla useita arvoja, jokainen arvo on eroteltu rivillä ja väliviivalla
   ```YAML
   ruoka:
     - makkara
     - muusi
-  auto:
-    - tersel
-    - tojota
+  rakennus:
+    - kerrostalo
+    - rivitalo
   ```
   - **Dictionary**, kokoelma avain: arvo pareista, sekä listoista
   ```YAML
