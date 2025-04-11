@@ -342,6 +342,16 @@ vagrant halt
 
 ---
 
+#### Lähteet
+https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file
+https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
+https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#create-the-ssh-state
+https://terokarvinen.com/2024/hello-salt-infra-as-code/
+https://developer.hashicorp.com/vagrant/docs/cli/init
+https://serverfault.com/questions/77300/tools-to-install-after-a-minimal-linux-install
+
+
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, https://terokarvinen.com/palvelinten-hallinta/<br><br>
 Kirjoittanut <em>Santeri Vauramo</em> 2025
