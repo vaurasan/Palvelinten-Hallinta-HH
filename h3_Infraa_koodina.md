@@ -233,6 +233,14 @@ kayttajat:
     - name: hellosantero
     - name: masteritesti
 ```
+```bash
+sudo salt slave state.apply komennot
+```
+Tällä scriptillä tuli yksi virhe
+
+![h306](images/h306png)
+
+
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
