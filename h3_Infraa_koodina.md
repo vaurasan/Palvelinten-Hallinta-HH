@@ -240,7 +240,20 @@ Tällä scriptillä tuli yksi virhe
 
 ![h306](images/h306.png)
 
-Koska
+Hetken pyörittelin masteritesti tiedostoa ja /tmp/ hakemistoa tuloksetta. Kysyin hakukoneelta apua ja pääsin sivulle https://docs.saltproject.io/en/3006/ref/states/all/salt.states.file.html, jossa lukee, että 
+
+```YAML
+/tmp/:
+  file.managed:
+    - name: hellosantero
+/tmp/:
+  file.managed:
+    - name: masteritesti
+```
+
+![h307](images/h307.png)
+
+Tuli herja tuosta /tmp/:stä ilmeisesti, koska se on kahteen kertaan tässä, kokeilen vielä että se ei johdu tuosta jälkimmäisestä kauttaviivasta, ei auttanut kauttaviivan poistaminen. Jostain syystä kahta tiedostoa ei pysty ainakaan näillä parametreilla luomaan samaan kansioon.
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
