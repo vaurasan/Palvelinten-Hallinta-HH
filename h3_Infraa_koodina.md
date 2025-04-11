@@ -322,10 +322,19 @@ dpkg -l micro ufw curl
 
 ![h312](images/h312.png)
 
+```bash
+cat /etc/passwd
+```
 
+![h313](images/h313.png)
 
+```bash
+ls /tmp
+```
 
+![h314](images/h314.png)
 
+Kaikki mitä luotiin, löytyy
 
 ---
 
