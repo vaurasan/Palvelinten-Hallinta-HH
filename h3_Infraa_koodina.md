@@ -81,7 +81,7 @@ Lists and dictionaries - YAML block structures
 - Sisennys määrää asiayhteyden. Ominaisuudet ja listat täytyy sisentää yhdellä tai useammalla välilyönnillä, kaksi välilyöntiä on "**standardi**"
 - Kokoelma, joka on **list** tai **dictionary**, osoittaa jokaisen merkinnän väliviivalla ja välilyönnillä
 
-## Otsikko
+## a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon
 
 
 
