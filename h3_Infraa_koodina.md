@@ -102,9 +102,15 @@ Seuraavaksi ajan komennon
 ```bash
 sudo salt-call --local state.apply hello
 ```
+![h301](images/h301.png)
 
+Varoituksen myötä kuitenkin tiedoston luominen onnistui
 
-
+Ajan komennon vielä uudelleen, ja käyn vielä tarkistamassa, että tiedosto on luotu kansioon
+```bash
+ls /tmp/hellosantero
+```
+![h302](images/h302.png)
 
 ## b) Aja esimerkki sls-tiedostosi verkon yli orjalla.
 
