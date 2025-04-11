@@ -17,7 +17,7 @@
 Käyttöjärjestelmä: Windows 11 Pro 24H2
 
 #### Virtuaalikone
-Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
+Oracle VirtualBox Version 7.1.4 r165100 (Qt6.5.3) - Debian 12 GNU/Linux (bookworm)<br>
 6 Prosessoriydintä - 8GB RAM-muistia - 60GB tallennustilaa
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
