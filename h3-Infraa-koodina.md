@@ -20,6 +20,8 @@ Käyttöjärjestelmä: Windows 11 Pro 24H2
 Oracle VirtualBox Version 7.1.4 r165100 (Qt6.5.3) - Debian 12 GNU/Linux (bookworm)<br>
 6 Prosessoriydintä - 8GB RAM-muistia - 60GB tallennustilaa
 
+Vagrant 2.4.3
+
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
 #### Karvinen 2014: [Hello Salt Infra-as-Code](https://terokarvinen.com/2024/hello-salt-infra-as-code/)
