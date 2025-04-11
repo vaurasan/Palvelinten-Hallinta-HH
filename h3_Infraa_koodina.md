@@ -88,7 +88,14 @@ Salt-minion oli jo valmiiksi asennettu tälle virtuaalikoneelle, joten sitä ei 
 sudo mkdir -p /srv/salt/hello/
 cd /srv/salt/hello/
 ```
-
+Luon tiedoston init.sls ja kirjoitan sinne koodin
+```bash
+sudoedit init.sls
+```
+```
+/tmp/hellosantero:
+  file.managed
+```
 
 
 
