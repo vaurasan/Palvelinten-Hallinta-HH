@@ -179,8 +179,13 @@ sudo salt slave state.apply hello
 ```
 ![h304](images/h304.png)
 
-
-
+Sitten vielä slavella tarkistamaan, että tiedosto **hellosantero** löytyy **tmp/** kansiosta
+```bash
+exit
+vagrant ssh slave
+ls /tmp/hellosantero
+```
+![h305](images/h305.png)
 
 ## c) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
