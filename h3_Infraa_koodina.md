@@ -83,20 +83,25 @@ Lists and dictionaries - YAML block structures
 
 ## a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon
 
-
-
-
-## Otsikko
-
-
-
-
-##
+Salt-minion oli jo valmiiksi asennettu tälle virtuaalikoneelle, joten sitä ei tarvitse tehdä. Aloitan luomalla "hello" kansion ja navigoin itseni sinne ("-p" luo kansion jos sitä ei jo ole, sekä luo myös ylemmät kansiot tarvittaessa(mkdir --help))
+```bash
+sudo mkdir -p /srv/salt/hello/
+cd /srv/salt/hello/
+```
 
 
 
 
-##
+## b) Aja esimerkki sls-tiedostosi verkon yli orjalla.
+
+
+
+
+## c) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
+
+
+
+
 
 
 
