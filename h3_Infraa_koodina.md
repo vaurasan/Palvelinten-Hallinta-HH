@@ -24,7 +24,8 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 
 #### Karvinen 2014: [Hello Salt Infra-as-Code](https://terokarvinen.com/2024/hello-salt-infra-as-code/)
 
-- 
+- Tässä luodaan niin sanottu salt:n "Hello world"
+- Aluksi asennetaan salt-minon: **sudo apt-get -y install salt-minion**
 
 
 
