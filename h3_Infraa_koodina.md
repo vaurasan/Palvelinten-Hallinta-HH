@@ -272,10 +272,62 @@ Ajan komennon vielä uudelleen ja seuraan tarkkaan ilmoituksia, jotta varmistuta
 
 Toisella kerralla ilmoitetaan, että paketit on jo asennettu, käyttäjä on paikalla, sekä tiedostot ovat jo olemassa, joten mitään muutoksia ei tehty.
 
+Käyn vielä slavella tarkistamassa, että kaikki on kuten pitääkin
+
+Yritin slavella käynnistää microa, mutta sitä ei ollut asennettu, pitää muokata tiedostoa, koska kaikki tiedostot, ohjelmat, ja käyttäjät pitää selkeästi laittaa erilleen, josko tämä olisi final-form:
+```bash
+ohjelma_micro_asennettu:
+  pkg.installed:
+    - name: micro
+
+ohjelma_ufw_asennettu:
+  pkg.installed
+    - name: ufw
+
+ohjelma_curl_asennettu:
+  pkg.installed
+    - name: curl
+
+kayttajat_testuser:
+  user.present:
+    - name: testuser
+
+kayttajat_testikauttaja:
+  user.present:
+    - name: testikauttaja
+
+kayttajat_hellomasteri:
+  user.present:
+    - name: hellomasteri
+
+/tmp/hellosantero:
+  file.managed:
+    - name: /tmp/hellosantero
+
+/tmp/masteritesti:
+  file.managed:
+    - name: /tmp/masteritesti
+```
+
+![h310](images/h310.png)
+
+Hetken tutkittua huomasin, että tuolta puuttui kaksoispisteet parilta riviltä, korjasin ne ja ajoin komennon uudelleen, vastaus on sen verran pitkä, että näytän vain loppuosan
+
+![h311](images/h311.png)
+
+Nyt menen tutkimaan slavea taas
+```bash
+dpkg -l micro ufw curl
+```
+
+![h312](images/h312.png)
 
 
 
---- 
+
+
+
+---
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, https://terokarvinen.com/palvelinten-hallinta/<br><br>
