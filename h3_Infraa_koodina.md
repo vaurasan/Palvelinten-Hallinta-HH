@@ -39,8 +39,10 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 #### Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml) Kohdat: Rules of YAML, YAML simple structure, Lists and dictionaries - YAML block structures
 
 Rules of YAML
+- Salt:ssa usein käytetään YAML renderöintiä, YAML renderöinnillä YAML tietorakenne kootaan Python datarakenteeksi Salt:iin
 - Data on strukturoitu **key: value** (avain: arvo) pareina
 - Kaksoispiste + välilyönti erottaa avaimen ja arvon toisistaan (": ")
+- 
 
 
 ## Otsikko
