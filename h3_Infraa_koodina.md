@@ -177,6 +177,7 @@ Ajetaan tiedosto (huom. kellon aika ei näemmä pidä paikkaansa Vagrantin virtu
 ```bash
 sudo salt-call --local state.apply hello
 ```
+![h304](images/h304.png)
 
 
 
