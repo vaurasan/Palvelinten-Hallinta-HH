@@ -20,11 +20,6 @@ Käyttöjärjestelmä: Windows 11 Pro 24H2
 Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 6 Prosessoriydintä - 4GB RAM-muistia - 60GB tallennustilaa
 
-#### Palvelin
-UpCloud<br>
-Debian 12 GNU/Linux (bookworm)<br>
-1 Prosessoriydin - 1GB RAM-muistia - 10GB tallennustilaa
-
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
 #### Karvinen 2014: [Hello Salt Infra-as-Code](https://terokarvinen.com/2024/hello-salt-infra-as-code/)
