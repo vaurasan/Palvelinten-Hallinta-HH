@@ -42,7 +42,12 @@ Rules of YAML
 - Salt:ssa usein käytetään YAML renderöintiä, YAML renderöinnillä YAML tietorakenne kootaan Python datarakenteeksi Salt:iin
 - Data on strukturoitu **key: value** (avain: arvo) pareina
 - Kaksoispiste + välilyönti erottaa avaimen ja arvon toisistaan (": ")
-- 
+- Avainten arvo voi olla monella eri rakenteella
+- Kaikkien avainten ja ominaisuuksien kirjainkoolla on merkitystä
+- Tabulaattoria ei sallita YAML:ssä, on käytettävä välilyöntejä
+- Kommentit alkavat "#" merkillä
+
+
 
 
 ## Otsikko
