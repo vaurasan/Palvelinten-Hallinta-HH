@@ -114,6 +114,8 @@ ls /tmp/hellosantero
 
 ## b) Aja esimerkki sls-tiedostosi verkon yli orjalla.
 
+Tätä varten siirryn Windowsiin ja luon tehtävän h2 ohjeilla Vagrantilla orjan ja masterin
+
 
 
 
