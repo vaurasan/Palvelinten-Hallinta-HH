@@ -50,6 +50,31 @@ Rules of YAML
 YAML simple structure
 - YAML sisältää kolme perus elementtiä:
   - **Scalar**, avain: arvo pari, joissa arvo voi olla numero, merkkijono, tai [totuusarvo](https://www.sanakirja.org/search.php?id=90117&l2=17) (boolean)
+  ```YAML
+  ruoka: makkara
+  auto: tersel
+  ```
+  - **List**, avain:, jonka jälkeen voi olla useita arvoja, jokainen arvo on eroteltu rivillä ja väliviivalla
+  ```YAML
+  ruoka:
+    - makkara
+    - muusi
+  auto:
+    - tersel
+    - tojota
+  ```
+  - **Dictionary**, kokoelma avain: arvo pareista, sekä listoista
+  ```YAML
+  lounas:
+    alkuruoka: salaatti
+    juoma: vesi
+    pääruoka:
+      - hernekeitto
+      - maksalaatikko
+      - pizza
+    jälkiruoka:
+      - jäätelö
+  ```
 
 
 
