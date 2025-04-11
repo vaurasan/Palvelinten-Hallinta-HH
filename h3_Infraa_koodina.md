@@ -26,6 +26,12 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 
 - Tässä luodaan niin sanottu salt:n "Hello world"
 - Aluksi asennetaan salt-minon: **sudo apt-get -y install salt-minion**
+- Luodaan kansio "hello" moduulille **sudo mkdir -p /srv/salt/hello/** <-- srv/salt on minionien jaettu kansio, hello/ <-- tulee sisältämään kaikki tähän "hello worldiin" liittyvät tiedostot
+- /srv/salt/hello kansioon luodaan ajettava tiedosto "init.sls": **sudoedit init.sls** <-- init.sls sisältää tämän "hello world" projektin koodin
+```
+/tmp/hellotero:
+  file.managed
+```
 
 
 
