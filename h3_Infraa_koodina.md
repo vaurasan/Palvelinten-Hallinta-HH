@@ -334,7 +334,11 @@ ls /tmp
 
 ![h314](images/h314.png)
 
-Kaikki mitä luotiin, löytyy
+Kaikki mitä luotiin, löytyy. Sammutan vielä virtuaalikoneet muistia viemästä
+
+```bash
+vagrant halt
+```
 
 ---
 
