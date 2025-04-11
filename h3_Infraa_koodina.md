@@ -116,6 +116,16 @@ ls /tmp/hellosantero
 
 Tätä varten siirryn Windowsiin ja luon tehtävän h2 ohjeilla Vagrantilla orjan ja masterin
 
+Luon Windowsissa kansion h3/ ja teen sinne Vagrantfilen, jossa on "master" ja "slave"
+```
+mkdir h3
+cd h3
+notepad.exe Vagrantfile
+```
+Komennolla **vagrant up** tulee seuraavanlainen error
+
+![h303](images/h303.png)
+
 
 
 
