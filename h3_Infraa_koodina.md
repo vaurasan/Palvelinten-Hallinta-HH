@@ -262,10 +262,20 @@ Tuli herja tuosta /tmp/:stä ilmeisesti, koska se on kahteen kertaan tässä, ko
   file.managed:
     - name: /tmp/masteritesti
 ```
-Nyt komennon ajettua ei tullut virheitä
+Nyt komentoa ajaessa ei tule virheitä, Salt ilmoittaa, että molemmat tiedostot on luotu
 
 ![h308](images/h308.png)
 
+Ajan komennon vielä uudelleen ja seuraan tarkkaan ilmoituksia, jotta varmistutaan siitä, että komento on idempotentti
+
+![h309](images/h309.png)
+
+Toisella kerralla ilmoitetaan, että paketit on jo asennettu, käyttäjä on paikalla, sekä tiedostot ovat jo olemassa, joten mitään muutoksia ei tehty.
+
+
+
+
+--- 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2025: Palvelinten Hallinta - Configuration Management Systems course - 2025 spring, https://terokarvinen.com/palvelinten-hallinta/<br><br>
