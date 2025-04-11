@@ -163,7 +163,20 @@ exit
 vagrant ssh master
 sudo salt-key -A
 ```
-
+Nyt ollaan valmiita komentamaan slavea masterilla. Luon masterilla hello/ kansion ja sinne init.sls tiedoston, jonne laitan tietoja
+```bash
+sudo mkdir -p /srv/salt/hello/
+cd /srv/salt/hello/
+sudoedit init.sls
+```
+```YAML
+/tmp/hellosantero:
+  file.managed
+```
+Ajetaan tiedosto (huom. kellon aika ei näemmä pidä paikkaansa Vagrantin virtuaalikoneessa)
+```bash
+sudo salt-call --local state.apply hello
+```
 
 
 
