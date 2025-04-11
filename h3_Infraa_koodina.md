@@ -253,7 +253,18 @@ Hetken pyörittelin masteritesti tiedostoa ja /tmp/ hakemistoa tuloksetta. Kysyi
 
 ![h307](images/h307.png)
 
-Tuli herja tuosta /tmp/:stä ilmeisesti, koska se on kahteen kertaan tässä, kokeilen vielä että se ei johdu tuosta jälkimmäisestä kauttaviivasta, ei auttanut kauttaviivan poistaminen. Jostain syystä kahta tiedostoa ei pysty ainakaan näillä parametreilla luomaan samaan kansioon.
+Tuli herja tuosta /tmp/:stä ilmeisesti, koska se on kahteen kertaan tässä, kokeilen vielä että se ei johdu tuosta jälkimmäisestä kauttaviivasta, ei auttanut kauttaviivan poistaminen. Muokkaan vielä tiedoston seuraavaan muotoon:
+```YAML
+/tmp/hellosantero:
+  file.managed:
+    - name: /tmp/hellosantero
+/tmp/masteritesti:
+  file.managed:
+    - name: /tmp/masteritesti
+```
+Nyt komennon ajettua ei tullut virheitä
+
+![h308](images/h308.png)
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
