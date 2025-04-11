@@ -126,7 +126,7 @@ Komennolla **vagrant up** tulee seuraavanlainen error
 
 ![h303](images/h303.png)
 
-
+Luin Vagrantin sivuilta https://developer.hashicorp.com/vagrant/docs/cli/init, että aluksi piti ajaa komento **vagrant init**, jolla alustetaan Vagrant toimimaan kyseisessä kansiossa, tämä myös samalla luo Vagrantfilen, jos sitä ei jo ole olemassa. Tässä tapauksessa kuitenkin se tiedosto oli jo olemassa, mutta Vagrant päällekirjoitti tiedoston, joten jouduin laittamaan tiedot uudelleen. Nyt kuitenkin sain **vagrant up**:lla virtuaalikoneet käyntiin
 
 
 ## c) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
