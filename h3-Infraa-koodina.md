@@ -149,7 +149,7 @@ curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/downl
 sudo apt-get update
 sudo apt-get -y install salt-minion
 ```
-Käyn antamassa slave:lle masterin osoitteen ja käyn masterilla hyväksymässä slaven id:n
+Käyn antamassa slave:lle masterin osoitteen, käynnistän slaven salt-minion ohjelman uudelleen ja käyn masterilla hyväksymässä slaven id:n
 ```bash
 sudoedit /etc/salt/minion
 ```
