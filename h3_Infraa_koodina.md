@@ -238,7 +238,7 @@ sudo salt slave state.apply komennot
 ```
 Tällä scriptillä tuli yksi virhe
 
-![h306](images/h306png)
+![h306](images/h306.png)
 
 
 
