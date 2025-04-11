@@ -32,8 +32,13 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 /tmp/hellotero:
   file.managed
 ```
+- Tämän jälkeen voidaan kutsua hello kansion init.sls tiedostoa komennolla **sudo salt-call --local state.apply hello**
+- Jos kaikki onnistui, nyt minion on luonut tmp/ kansioon tiedoston "hellotero"
+- Idempotenttina käskynä komennon uudelleen ajaminen ei luo uutta tiedostoa, jos semmoinen löytyy jo
 
+#### Salt contributors: [Salt overview](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml) Kohdat: Rules of YAML, YAML simple structure, Lists and dictionaries - YAML block structures
 
+ -  
 
 
 ## Otsikko
