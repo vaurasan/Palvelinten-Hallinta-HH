@@ -77,8 +77,9 @@ YAML simple structure
   ```
   
 Lists and dictionaries - YAML block structures
-- 
-
+- YAML on organisoitu lohkorakenteiseksi
+- Sisennys määrää asiayhteyden. Ominaisuudet ja listat täytyy sisentää yhdellä tai useammalla välilyönnillä, kaksi välilyöntiä on "**standardi**"
+- Kokoelma, joka on **list** tai **dictionary**, osoittaa jokaisen merkinnän väliviivalla ja välilyönnillä
 
 ## Otsikko
 
