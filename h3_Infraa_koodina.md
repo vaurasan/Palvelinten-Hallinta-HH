@@ -163,7 +163,7 @@ exit
 vagrant ssh master
 sudo salt-key -A
 ```
-Nyt ollaan valmiita komentamaan slavea masterilla. Luon masterilla hello/ kansion ja sinne init.sls tiedoston, jonne laitan tietoja
+Nyt ollaan valmiita komentamaan slavea masterilla. Luon masterilla **hello/** kansion ja sinne **init.sls** tiedoston, jonne laitan tietoja
 ```bash
 sudo mkdir -p /srv/salt/hello/
 cd /srv/salt/hello/
