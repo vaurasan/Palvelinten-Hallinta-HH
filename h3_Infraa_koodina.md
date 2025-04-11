@@ -198,7 +198,7 @@ Masterilla sisään ja luomaan **init.sls** tiedostoa **komennot/** kansioon.
 Tämä tiedosto ajettuna pitää huolen, että slavelle on asennettu ohjelmat: 
 - micro
 - ufw
-- curl
+- curl (tämähän on jo asennettu, jotta pystyin asentamaan salt-minionin)
 
 Käyttäjät on luotu:
 - testuser
@@ -228,7 +228,7 @@ kayttajat:
     - name: testikauttaja
     - name: hellomasteri
 
-/tmp/:
+/tmp/heipat:
   file.managed:
     - name: hellosantero
     - name: masteritesti
@@ -240,7 +240,7 @@ Tällä scriptillä tuli yksi virhe
 
 ![h306](images/h306.png)
 
-
+Koska
 
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
