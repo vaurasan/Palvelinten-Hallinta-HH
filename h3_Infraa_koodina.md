@@ -49,7 +49,7 @@ Rules of YAML
 
 YAML simple structure
 - YAML sisältää kolme perus elementtiä:
-- 
+  - **Scalar**, avain: arvo pari, joissa arvo voi olla numero, merkkijono, tai [totuusarvo](https://www.sanakirja.org/search.php?id=90117&l2=17) (boolean)
 
 
 
