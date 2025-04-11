@@ -28,7 +28,7 @@ Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
 - Aluksi asennetaan salt-minon: **sudo apt-get -y install salt-minion**
 - Luodaan kansio "hello" moduulille **sudo mkdir -p /srv/salt/hello/** <-- srv/salt on minionien jaettu kansio, hello/ <-- tulee sisältämään kaikki tähän "hello worldiin" liittyvät tiedostot
 - /srv/salt/hello kansioon luodaan ajettava tiedosto "init.sls": **sudoedit init.sls** <-- init.sls sisältää tämän "hello world" projektin koodin, tässä tapauksessa kirjoitetaan tiedostoon:
-```
+```YAML
 /tmp/hellotero:
   file.managed
 ```
@@ -47,6 +47,9 @@ Rules of YAML
 - Tabulaattoria ei sallita YAML:ssä, on käytettävä välilyöntejä
 - Kommentit alkavat "#" merkillä
 
+YAML simple structure
+- YAML sisältää kolme perus elementtiä:
+- 
 
 
 
