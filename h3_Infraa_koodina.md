@@ -18,7 +18,7 @@ Käyttöjärjestelmä: Windows 11 Pro 24H2
 
 #### Virtuaalikone
 Oracle VirtualBox 7 - Debian 12 GNU/Linux (bookworm)<br>
-6 Prosessoriydintä - 4GB RAM-muistia - 60GB tallennustilaa
+6 Prosessoriydintä - 8GB RAM-muistia - 60GB tallennustilaa
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
@@ -75,7 +75,9 @@ YAML simple structure
     jälkiruoka:
       - jäätelö
   ```
-
+  
+Lists and dictionaries - YAML block structures
+- 
 
 
 ## Otsikko
