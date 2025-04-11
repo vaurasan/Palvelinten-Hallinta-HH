@@ -173,11 +173,12 @@ sudoedit init.sls
 /tmp/hellosantero:
   file.managed
 ```
-Ajetaan tiedosto (huom. kellon aika ei näemmä pidä paikkaansa Vagrantin virtuaalikoneessa)
+Ajetaan tiedosto slavella
 ```bash
-sudo salt-call --local state.apply hello
+sudo salt slave state.apply hello
 ```
 ![h304](images/h304.png)
+
 
 
 
