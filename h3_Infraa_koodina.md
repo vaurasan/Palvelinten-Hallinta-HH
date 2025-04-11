@@ -129,7 +129,7 @@ Komennolla **vagrant up** tulee seuraavanlainen error
 Luin Vagrantin sivuilta https://developer.hashicorp.com/vagrant/docs/cli/init, että aluksi piti ajaa komento **vagrant init**, jolla alustetaan Vagrant toimimaan kyseisessä kansiossa, tämä myös samalla luo Vagrantfilen, jos sitä ei jo ole olemassa. Tässä tapauksessa kuitenkin se tiedosto oli jo olemassa, mutta Vagrant päällekirjoitti tiedoston, joten jouduin laittamaan tiedot uudelleen. Nyt kuitenkin sain **vagrant up**:lla virtuaalikoneet käyntiin
 
 Asennan Salt:n molempiin virtuaalikoneisiin
-```
+```bash
 vagrant up
 vagrant ssh master
 sudo apt-get update
@@ -148,6 +148,22 @@ curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltPr
 curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
 sudo apt-get update
 sudo apt-get -y install salt-minion
+```
+Käyn antamassa slave:lle masterin osoitteen ja käyn masterilla hyväksymässä slaven id:n
+```bash
+sudoedit /etc/salt/minion
+```
+```YAML
+master: 192.168.88.101
+id: slave
+```
+```bash
+sudo systemctl restart salt-minion.service
+exit
+vagrant ssh master
+sudo salt-key -A
+```
+
 
 
 
