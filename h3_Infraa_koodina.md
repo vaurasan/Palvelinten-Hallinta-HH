@@ -83,7 +83,7 @@ Lists and dictionaries - YAML block structures
 
 ## a) Hei infrakoodi! Kokeile paikallisesti (esim 'sudo salt-call --local') infraa koodina. Kirjota sls-tiedosto, joka tekee esimerkkitiedoston /tmp/ -kansioon
 
-Salt-minion oli jo valmiiksi asennettu tälle virtuaalikoneelle, joten sitä ei tarvitse tehdä. Aloitan luomalla "hello" kansion ja navigoin itseni sinne ("-p" luo kansion jos sitä ei jo ole, sekä luo myös ylemmät kansiot tarvittaessa(mkdir --help))
+Salt-minion oli jo valmiiksi asennettu tälle virtuaalikoneelle, joten sitä ei tarvitse tehdä. Aloitan luomalla "hello" kansion ja navigoin itseni sinne ("-p" luo kansion jos sitä ei jo ole, ei anna erroria jos se on jo olemassa, sekä luo myös ylemmät kansiot tarvittaessa(mkdir --help))
 ```bash
 sudo mkdir -p /srv/salt/hello/
 cd /srv/salt/hello/
