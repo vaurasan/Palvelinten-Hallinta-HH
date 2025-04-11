@@ -189,7 +189,21 @@ ls /tmp/hellosantero
 
 ## c) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
-Masterilla sisään ja luomaan tiedostoa
+Tehtävänannossa ei varsinaisesti sanota, että tätä pitäisi tehdä verkon yli, mutta nyt kun vauhtiin päästiin, niin tehdään se master -> slave
+
+Luin vielä lisää .sls tiedostojen luonnista täältä: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#create-the-ssh-state
+
+Masterilla sisään ja luomaan **init.sls** tiedostoa **komennot/** kansioon. 
+
+Tämä tiedosto ajettuna pitää huolen, että slavelle on asennettu ohjelmat: 
+- micro
+- ufw
+- curl
+
+Käyttäjät on luotu:
+- testuser
+- testikauttaja
+- hellomasteri
 ```
 vagrant ssh master
 cd /srv/salt
@@ -198,8 +212,17 @@ cd komennot/
 sudoedit init.sls
 ```
 ```
+ohjelmien_asennus:
+  pkg.installed:
+    - name: micro
+    - name: ufw
+    - name: curl
 
-
+kayttajat:
+  user.present:
+    - name: testuser
+    - name: testikauttaja
+    - name: hellomasteri
 
 
 
