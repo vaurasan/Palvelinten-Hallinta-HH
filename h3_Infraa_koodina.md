@@ -204,14 +204,18 @@ Käyttäjät on luotu:
 - testuser
 - testikauttaja
 - hellomasteri
-```
+
+Tiedostot on luotu:
+- /tmp/hellosantero:
+- /tmp/masteritesti
+```bash
 vagrant ssh master
 cd /srv/salt
 sudo mkdir komennot
 cd komennot/
 sudoedit init.sls
 ```
-```
+```YAML
 ohjelmien_asennus:
   pkg.installed:
     - name: micro
