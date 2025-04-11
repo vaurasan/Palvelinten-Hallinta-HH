@@ -114,7 +114,7 @@ ls /tmp/hellosantero
 
 ## b) Aja esimerkki sls-tiedostosi verkon yli orjalla.
 
-Tätä varten siirryn Windowsiin ja luon tehtävän h2 ohjeilla Vagrantilla orjan ja masterin
+Tätä varten siirryn Windowsiin ja luon tehtävän h2 ohjeilla https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file Vagrantilla orjan ja masterin
 
 Luon Windowsissa kansion h3/ ja teen sinne Vagrantfilen, jossa on "master" ja "slave"
 ```
