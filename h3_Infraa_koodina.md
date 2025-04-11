@@ -189,8 +189,10 @@ ls /tmp/hellosantero
 
 ## c) Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä: package, file, service, user. Tarkista eri ohjelmalla, että lopputulos on oikea. Osoita useammalla ajolla, että sls-tiedostosi on idempotentti.
 
-
-
+Masterilla sisään ja luomaan tiedostoa
+```
+vagrant ssh master
+cd /srv/salt
 
 
 
