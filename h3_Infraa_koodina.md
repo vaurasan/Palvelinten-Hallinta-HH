@@ -92,10 +92,17 @@ Luon tiedoston init.sls ja kirjoitan sinne koodin
 ```bash
 sudoedit init.sls
 ```
-```
+```YAML
 /tmp/hellosantero:
   file.managed
 ```
+**Ctrl+s** <- tallennus ja **Ctrl+q** <- poistuu Micro editorista
+
+Seuraavaksi ajan komennon
+```bash
+sudo salt-call --local state.apply hello
+```
+
 
 
 
