@@ -315,7 +315,7 @@ Hetken tutkittua huomasin, että tuolta puuttui kaksoispisteet parilta riviltä,
 
 ![h311](images/h311.png)
 
-Nyt menen tutkimaan slavea taas
+Nyt menen tutkimaan slavea taas 
 ```bash
 dpkg -l micro ufw curl
 ```
